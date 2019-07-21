@@ -50,7 +50,7 @@ const user = {
     LoginByUsername({commit}, userInfo) {
       const user = encryption({
         data: userInfo,
-        key: 'thanks,pig4cloud',
+        key: 'thanks,tz4clouds',
         param: ['password']
       })
       return new Promise((resolve, reject) => {
