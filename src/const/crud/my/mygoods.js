@@ -27,48 +27,63 @@ export const tableOption = {
   addBtn: false,
   column: [
 	  {
-      label: '编号',
-      prop: 'id'
-    },
-	  {
       label: '类型',
-      prop: 'type'
+      prop: 'type',
+      type: 'select',
+      dicUrl: '/admin/dict/type/goodsType',
+      search: true
     },
 	  {
+      width: 170,
       label: '货物名称',
-      prop: 'name'
+      prop: 'name',
+      search: true
     },
 	  {
       label: '价格',
       prop: 'price'
     },
-	  {
-      label: '备注',
-      prop: 'remark'
-    },
-	  {
+    {
+      width: 170,
       label: '购买日期',
+      type: 'date',
       prop: 'buyTime'
     },
 	  {
+      width: 150,
+      label: '备注',
+      prop: 'remark',
+      span: 24
+    },
+    {
+      label: '删除标记',
+      prop: 'delFlag'
+    },
+	  {
       label: '创建者',
+      editDisabled: true,
+      addVisdiplay: false,
       prop: 'createBy'
     },
 	  {
+      width: 170,
       label: '创建时间',
+      editDisabled: true,
+      addVisdiplay: false,
       prop: 'createTime'
     },
 	  {
       label: '更新人',
+      editDisabled: true,
+      addVisdiplay: false,
       prop: 'updateBy'
     },
 	  {
+      width: 170,
       label: '更新时间',
+      editDisabled: true,
+      addVisdiplay: false,
       prop: 'updateTime'
-    },
-	  {
-      label: '删除标记',
-      prop: 'delFlag'
-    },
+    }
   ]
 }
