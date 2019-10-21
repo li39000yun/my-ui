@@ -62,30 +62,31 @@ export const tableOption = {
       prop: 'delFlag',
       type: 'select',
       dicUrl: '/admin/dict/type/boolean',
+      valueDefault: '0'
     },
 	  {
       label: '创建者',
-      editDisabled: true,
+      editVisdiplay: false,
       addVisdiplay: false,
       prop: 'createBy'
     },
 	  {
       width: 170,
       label: '创建时间',
-      editDisabled: true,
+      editVisdiplay: false,
       addVisdiplay: false,
       prop: 'createTime'
     },
 	  {
       label: '更新人',
-      editDisabled: true,
+      editVisdiplay: false,
       addVisdiplay: false,
       prop: 'updateBy'
     },
 	  {
       width: 170,
       label: '更新时间',
-      editDisabled: true,
+      editVisdiplay: false,
       addVisdiplay: false,
       prop: 'updateTime'
     }

@@ -8,6 +8,7 @@
                  :option="tableOption"
                  @current-change="currentChange"
                  @refresh-change="refreshChange"
+                 @search-change="searchChange"
                  @size-change="sizeChange"
                  @row-update="handleUpdate"
                  @row-save="handleSave"
@@ -97,6 +98,7 @@
     },
     handleEdit(row, index) {
       this.$refs.crud.rowEdit(row, index)
+      debugger
     },
     handleDel(row, index) {
       this.$refs.crud.rowDel(row, index)
@@ -155,6 +157,15 @@
       })
       done()
     })
+    },
+    /**
+     * 搜索回调
+     */
+    searchChange(form) {
+      debugger
+      this.listQuery.type = form.type;
+      this.listQuery.name = form.name;
+      this.getList()
     },
     /**
      * 刷新回调
