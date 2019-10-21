@@ -47,6 +47,8 @@ export const tableOption = {
       width: 170,
       label: '购买日期',
       type: 'date',
+      valueFormat: 'yyyy-MM-dd hh:mm:ss ',
+      format: 'yyyy-MM-dd',
       prop: 'buyTime'
     },
 	  {
@@ -57,7 +59,9 @@ export const tableOption = {
     },
     {
       label: '删除标记',
-      prop: 'delFlag'
+      prop: 'delFlag',
+      type: 'select',
+      dicUrl: '/admin/dict/type/boolean',
     },
 	  {
       label: '创建者',
