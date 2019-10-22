@@ -22,6 +22,10 @@ export const tableOption = {
   stripe: true,
   menuAlign: 'center',
   align: 'center',
+  defaultSort:{
+    prop: 'buyTime',
+    order: 'descending'
+  },
   editBtn: false,
   delBtn: false,
   addBtn: false,

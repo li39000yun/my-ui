@@ -54,3 +54,11 @@ export function putObj(obj) {
     data: obj
   })
 }
+
+// 合计
+export function totalData() {
+  return request({
+    url: '/my/mygoods/total',
+    method: 'post'
+  })
+}
