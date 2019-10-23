@@ -66,10 +66,9 @@
     },
     methods: {
       initData() {
-        totalData().then(response => {
-          debugger
-          console.info(response);
-        })
+        // totalData().then(response => {
+        //   console.info(response);
+        // })
       }
     }
   }
